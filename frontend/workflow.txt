@@ -1,0 +1,25 @@
+The frontend will communicate with localhost from here. The workflow is the
+following: 
+
+---
+
+production
+
+1. make changes to fronted
+2. commit and push changes to your dev_frontend branch 
+3. git pull from the master branch -- ask about the implemented backend feature
+4. http request to localhost
+
+---
+
+development
+
+- backend has a stub endpoint -> localhost/stub. Send requests to this endpoint
+to test your frontend implementation. The endpoint returns one of the possible
+ 3 hardcoded jsons which should be sufficient to create your implementation.
+Around 18 hours in (after sleep break) we should be looking into marrying the
+two.
+
+1. git pull the master branch (it has the stub endpoint)
+2. request the stub endpoint and wait for response
+
