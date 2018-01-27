@@ -22,7 +22,7 @@ def analyse_keywords(subtitles_path, max_elem = 10):
     for sub in subtitles:
         for word in sub.split():
             if word in nouns:
-                print(nouns[word])
+                #print(nouns[word])
                 if nouns[word] in occurences:
                     occurences[nouns[word]] = occurences[nouns[word]] + 1
                 else:
