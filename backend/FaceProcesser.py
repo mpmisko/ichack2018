@@ -7,10 +7,11 @@ class FaceProcesser:
         results = []
         count = 0
         for filename in os.listdir(path):
-            print(path+filename)
-            if (self.is_face(path+filename)):
-                print(path+'faces')
-                copyfile(path+filename, path+'faces/'+filename)
+            if filename.endswith('.jpg'):
+                print(path+filename)
+                if (self.is_face(path+filename)):
+                    print(path+'faces')
+                    copyfile(path+filename, path+'faces/'+filename)
 
         return results
 
@@ -23,5 +24,5 @@ class FaceProcesser:
         return len(self.faces(path)) != 0
 
 detector = FaceProcesser()
-print(detector.filter_faces('/Users/michal/Desktop/pics/doctor_strange/'))
+print(detector.filter_faces('/Users/michal/Desktop/pics/dunkirk/'))
 
