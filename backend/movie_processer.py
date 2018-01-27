@@ -3,8 +3,8 @@ import os
 
 FRAME_FREQ = 300
 END_LEN = 10000
-MOVIE_POS = '/Users/michal/Downloads/Dunkirk/dunkirk.mp4'
-OUTPUT = '/Users/michal/Desktop/pics/dunkirk/'
+MOVIE_POS = '/Users/michal/Downloads/american/American.mp4'
+OUTPUT = '/Users/michal/Desktop/pics/american_made/'
 
 class MovieProcesser:
 
@@ -37,6 +37,9 @@ class MovieProcesser:
         # When everything done, release the capture
         cap.release()
         cv2.destroyAllWindows()
+
+p = MovieProcesser()
+p.video_to_frames(MOVIE_POS, OUTPUT)
 
 
 
