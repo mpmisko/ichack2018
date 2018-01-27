@@ -14,3 +14,4 @@ requests
 SQLAlchemy
 psycopg2
 scipy
+imageio
