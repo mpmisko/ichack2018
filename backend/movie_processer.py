@@ -37,7 +37,3 @@ class MovieProcesser:
         # When everything done, release the capture
         cap.release()
         cv2.destroyAllWindows()
-
-MovieProcesser().video_to_frames(MOVIE_POS, OUTPUT)
-
-

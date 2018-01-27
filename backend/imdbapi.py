@@ -40,7 +40,7 @@ def getJSON(html):
     data['directors'] = directors   
         
     json_data = json.dumps(data)
-    return json_data
+    return data
     
 def getHTML(url):
     response = requests.get(url)
@@ -62,6 +62,6 @@ def getURL(input):
         return 'Invalid input or Network Error!'
         
     
-input = input("Enter IMDB ID or Title: ")
-print('Getting information, Please Wait....')
-print(getURL(input))
+#input = input("Enter IMDB ID or Title: ")
+#print('Getting information, Please Wait....')
+#print(getURL(input))
