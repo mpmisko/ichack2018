@@ -13,3 +13,4 @@ raven
 requests
 SQLAlchemy
 psycopg2
+opencv-python
