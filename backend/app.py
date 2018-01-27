@@ -7,8 +7,11 @@ from threading import Thread
 
 
 app = Flask(__name__, static_url_path='')
+frontend_test_json = {
 
-@app.route('/')
+}
+
+@app.route('/frontend_test')
 def index():
     return "Nothing here :)"
 
