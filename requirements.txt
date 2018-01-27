@@ -16,4 +16,4 @@ psycopg2
 opencv-python
 scipy
 imageio
-
+srt
