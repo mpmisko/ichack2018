@@ -31,7 +31,7 @@ def analyse_keywords(subtitles_path, max_elem = 10):
     occurences_list = [(k, v) for k, v in occurences.items()]
     occurences_list = sorted(occurences_list, key=lambda tup: tup[1], reverse = True)
 
-    return occurences_list[:max_elem]
+    return {"words" : [k for k, v in occurences_list[:max_elem]]}
 
 def load_nouns():
     f = open(NOUNSPATH, "r")
