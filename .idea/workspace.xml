@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88aa5fba-2c0d-4f3a-8e49-4c06301370ee" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/movie_processer.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/avg_clr.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black copy 2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black copy 3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black copy 4.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black copy 5.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black copy 6.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black copy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0052.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0094.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0100.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0102.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0113.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0115.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0118.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0144.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0167.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0198.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
@@ -41,9 +58,21 @@
         <entry file="file://$PROJECT_DIR$/backend/movie_processer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="avg_clr.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/avg_clr.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,8 +81,8 @@
       <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="255">
+              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -61,6 +90,26 @@
       </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2485">
+              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workflow.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/workflow.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -86,8 +135,8 @@
       <list>
         <option value="$PROJECT_DIR$/gitignore" />
         <option value="$PROJECT_DIR$/backend/app.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/backend/movie_processer.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -268,16 +317,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="-2485">
           <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/__init__.py">
+    <entry file="file://$PROJECT_DIR$/frontend/workflow.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/movie_processer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/avg_clr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -291,20 +361,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/movie_processer.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt.orig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding />
         </state>
       </provider>
