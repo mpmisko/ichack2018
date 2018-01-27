@@ -27,7 +27,7 @@ frontend_test_json = {
 
 @app.route('/frontend_test')
 def index():
-    return frontend_test_json
+    return json.dumps(frontend_test_json)
 
 @app.route('/process')
 def process():
