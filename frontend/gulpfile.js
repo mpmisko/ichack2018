@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const liquidate = require('gulp-liquidate');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+const plumber =require('gulp-plumber');
 var browserSync = require('browser-sync').create();
 
 
@@ -13,6 +14,7 @@ gulp.task("default", function(){
 
 gulp.task("style", function () {
         gulp.src("app/style/**/*.scss")
+        .pipe(plumber())
         .pipe(sass({"bundleExec": true}))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
@@ -35,7 +37,7 @@ gulp.task("js", function () {
     });
 
 
-gulp.task('serve', ['html', 'style'], function() {
+gulp.task('serve', ['html', 'style', 'js' ], function() {
 
   	gulp.watch("app/**/*.scss", ['style']).on('change', browserSync.reload);
     gulp.watch("app/**/*.js", ['js']).on('change', browserSync.reload);
