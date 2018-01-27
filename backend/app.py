@@ -5,11 +5,10 @@ from flask import Flask, send_file, request
 import json
 from threading import Thread
 
-
 app = Flask(__name__, static_url_path='')
 frontend_test_json = {
   "name": "batman",
-  "picutre": "https://goo.gl/kqBGik",
+  "picture": "https://goo.gl/kqBGik",
   "avg_color": "#FF0000",
   "emotions": {
     "anger": 0.15,

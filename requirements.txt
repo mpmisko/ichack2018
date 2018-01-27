@@ -17,4 +17,6 @@ opencv-python
 scipy
 imageio
 face_recognition
+srt
+beautifulsoup4
 
