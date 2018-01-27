@@ -1,4 +1,53 @@
-main{
-	color: yellow;
-	flex: all;
+.header--1{
+	height: 2.5em;
+	background-color: $color-one;
+	position: relative;
+}
+
+.header--2{
+	height: 5em;
+	background-color: $color-two;
+	position: relative;
+}
+
+.main{
+	//background-image: url(https://goo.gl/kqBGik);
+	background-color: $color-dark;
+}
+
+.footer{
+	background-color: $color-two;
+
+}
+
+.content{
+	display: 1200px;
+}
+
+$gap-general: 10px;
+
+.report{
+	max-width: 600px;
+	margin: 0 auto;
+
+	&__card-wrap{
+
+	}
+	
+	&__hsep{
+		width: $gap-general;
+		background-color: transparent;
+	}
+
+	&__vsep{
+		height: $gap-general;
+		background-color: transparent;
+	}
+
+}
+
+
+
+.h100{
+	height: 100px;
 }

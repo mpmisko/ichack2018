@@ -1,0 +1,24 @@
+.card{
+
+background-color: #555;
+	&__body{
+		padding: 5px;
+		
+		display: block;
+
+
+	}
+	
+	$card__header-height: 30px;
+	&__header{
+		padding: 5px;
+		display: block;
+		padding-bottom: 0;
+		&__title{
+			font-size: 1.7em;
+			
+			//height: $card__header-height;
+			display: block;
+		}
+	}	
+}

@@ -1,0 +1,12 @@
+.card {
+  background-color: #555; }
+  .card__body {
+    padding: 5px;
+    display: block; }
+  .card__header {
+    padding: 5px;
+    display: block;
+    padding-bottom: 0; }
+    .card__header__title {
+      font-size: 1.7em;
+      display: block; }

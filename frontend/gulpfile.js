@@ -26,6 +26,7 @@ gulp.task("style", function () {
 
 gulp.task("html", function () {
         gulp.src("app/html/**/*.html")
+        .pipe(plumber())
         .pipe(gulp.dest("dist/"));
     });
 
@@ -33,6 +34,7 @@ gulp.task("html", function () {
 
 gulp.task("js", function () {
         gulp.src("app/js/**/*.js")
+        .pipe(plumber())
         .pipe(gulp.dest("dist/js"));
     });
 

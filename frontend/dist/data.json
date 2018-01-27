@@ -1,0 +1,17 @@
+frontend_test_json = {
+ "name": "batman",
+ "picture": "https://goo.gl/kqBGik",
+ "avg_color": "#FF0000",
+ "emotions": {
+   "anger": 0.15,
+   "contempt": 0.05,
+   "disgust": 0.1,
+   "fear": 0.04,
+   "happiness": 0.4,
+   "neutral": 0.23,
+   "sadness": 0.1,
+   "surprise": 0.02
+ },
+ "words": ["war", "fast", "mjolnir", "earth", "conquer"],
+ "objects": ["batmobile", "clown", "car", "gun", "villain"]
+}

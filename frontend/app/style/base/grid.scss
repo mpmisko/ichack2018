@@ -1,0 +1,31 @@
+$total-columns: 12;
+
+$col-widths: ();
+@for $i from 1 through $total-columns {
+    @for $j from 1 through $i {
+        $w: ($j/$i);
+
+        @if not index($col-widths, $w) {
+            .col-#{$j}-#{$i} {
+                width: $w * 100% ;
+                float: left;
+                display: inline-block;
+                border: 0px;
+            }
+
+            $col-widths: append($col-widths, $w, comma);
+        }
+        
+    }
+}
+
+.row{
+	display: block;
+	width: 100%;
+    overflow: hidden;
+}
+
+@media (min-width: 30em) {
+    .unrow { width: 100%; display: table; table-layout: fixed; }
+    .uncol { display: table-cell; }
+}

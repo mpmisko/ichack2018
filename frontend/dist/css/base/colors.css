@@ -1,0 +1,9 @@
+/* $color-one: #f44336;
+$color-two: #222;
+$color-light: #aaaaaa;
+$color-dark: #444; */
+.bg-color-transparent {
+  background-color: transparent; }
+
+.bg-color-amber {
+  background-color: #F0A30A !important; }
