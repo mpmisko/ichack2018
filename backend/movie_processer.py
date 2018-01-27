@@ -38,8 +38,6 @@ class MovieProcesser:
         cap.release()
         cv2.destroyAllWindows()
 
-p = MovieProcesser()
-p.video_to_frames(MOVIE_POS, OUTPUT)
 
 
 
