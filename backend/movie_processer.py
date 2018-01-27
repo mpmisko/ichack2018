@@ -39,9 +39,3 @@ class MovieProcesser:
         # When everything done, release the capture
         cap.release()
         cv2.destroyAllWindows()
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> edf403a7ac0130866da8d8b0238dcde276198642
