@@ -65,7 +65,9 @@ class EmotionsClient:
             response = self.process_image(pics_dir + filename)
             print(response)
             responses.append(response)
-        return self._compute(responses)
+        result = self._compute(responses)
+        print('________________________________________________________________________')
+        return self._neutralize(result)
 
     def _avg(self, frame):
         feeling = {
@@ -78,6 +80,8 @@ class EmotionsClient:
             'sadness': 0,
             'surprise': 0
         }
+
+        if frame == None: return feeling
         if len(frame) == 0: return feeling
 
         for person in frame:
@@ -111,8 +115,8 @@ class EmotionsClient:
             for k, v in f.items():
                 feeling[k] += v
 
-            for k, v in feeling.items():
-                feeling[k] = v / len(averages)
+        for k, v in feeling.items():
+            feeling[k] = v / len(averages)
 
         return feeling
 
@@ -122,10 +126,43 @@ class EmotionsClient:
                 return True
         return False
 
+    def _neutralize(self, result):
+        feeling = {
+            'anger': 0,
+            'contempt': 0,
+            'disgust': 0,
+            'fear': 0,
+            'happiness': 0,
+            'sadness': 0,
+            'surprise': 0
+        }
+
+        for k, v in feeling.items():
+            feeling[k] = result[k]/result['neutral']
+
+        sum = self._sum(feeling)
+
+        for k, v in feeling.items():
+            feeling[k] = v/sum
+
+        return feeling
+
+    def _sum(self, res):
+        sum = 0
+        for k, v in res.items():
+            sum += v
+        return sum
+
+
+
 # example use:
 #   path_to_img = "/Users/mpmisko/Downloads/IMG_20180120_131159.jpg"
 #   ac = EmotionsClient()
 #   response = ac.process_image(path_to_img)
 
 eClient = EmotionsClient()
-print(eClient.process_movie('/Users/michal/Desktop/pics/dunkirk/'))
+print('________________________________________________________________________')
+
+res = eClient.process_movie('/Users/michal/Desktop/pics/doctor_strange/faces/')
+print(res)
+
