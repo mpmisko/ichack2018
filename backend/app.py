@@ -5,6 +5,9 @@ from flask import Flask, send_file, request
 import json
 from threading import Thread
 
+
+app = Flask(__name__, static_url_path='')
+
 @app.route('/')
 def index():
     return "Nothing here :)"
