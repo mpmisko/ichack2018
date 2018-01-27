@@ -12,8 +12,8 @@ class MovieProcesser:
         cap = cv2.VideoCapture(video_loc)
 
         try:
-            if not os.path.exists('data'):
-                os.makedirs('data')
+            if not os.path.exists(output_loc):
+                os.makedirs(output_loc)
         except OSError:
             print ('Error: Creating directory of data')
 
