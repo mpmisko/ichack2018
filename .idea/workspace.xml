@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88aa5fba-2c0d-4f3a-8e49-4c06301370ee" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/avg_clr.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black copy 2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black copy 3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black copy 4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black copy 5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black copy 6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black copy.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/black_pics/black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0052.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0094.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0100.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0102.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0113.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0115.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0118.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0144.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0167.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/DSC_0198.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/test_pics/EmotionsClient.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change beforePath="$PROJECT_DIR$/backend/movie_processer.py" afterPath="$PROJECT_DIR$/backend/movie_processer.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movie_processer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="movie_processer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/movie_processer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="538">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -78,11 +61,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmotionsClient.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/test_pics/EmotionsClient.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,8 +128,9 @@
       <list>
         <option value="$PROJECT_DIR$/gitignore" />
         <option value="$PROJECT_DIR$/backend/app.py" />
-        <option value="$PROJECT_DIR$/backend/movie_processer.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/backend/test_pics/EmotionsClient.py" />
+        <option value="$PROJECT_DIR$/backend/movie_processer.py" />
       </list>
     </option>
   </component>
@@ -177,6 +171,12 @@
               <item name="ichack2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="ichack2018" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ichack2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ichack2018" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="test_pics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ichack2018" type="b2602c69:ProjectViewProjectNode" />
@@ -331,16 +331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/movie_processer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/avg_clr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -382,6 +372,24 @@
         <state relative-caret-position="255">
           <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/test_pics/EmotionsClient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/movie_processer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
