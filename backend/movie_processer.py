@@ -3,8 +3,10 @@ import os
 
 FRAME_FREQ = 300
 END_LEN = 10000
+
 MOVIE_POS = '/Users/mackopes/Desktop/How To Train Your Dragon (2010) [1080p]/How.To.Train.Your.Dragon.2010.1080p.BrRip.x264.YIFY.mp4'
 OUTPUT = '/Users/mackopes/Desktop/HTTYD/pics'
+
 
 class MovieProcesser:
 
@@ -12,8 +14,8 @@ class MovieProcesser:
         cap = cv2.VideoCapture(video_loc)
 
         try:
-            if not os.path.exists('data'):
-                os.makedirs('data')
+            if not os.path.exists(output_loc):
+                os.makedirs(output_loc)
         except OSError:
             print ('Error: Creating directory of data')
 
@@ -37,3 +39,9 @@ class MovieProcesser:
         # When everything done, release the capture
         cap.release()
         cv2.destroyAllWindows()
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> edf403a7ac0130866da8d8b0238dcde276198642
