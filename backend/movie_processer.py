@@ -40,14 +40,5 @@ class MovieProcesser:
         cap.release()
         cv2.destroyAllWindows()
 
-<<<<<<< HEAD
-p = MovieProcesser()
-p.video_to_frames(MOVIE_POS, OUTPUT)
-
-
-
-=======
-MovieProcesser().video_to_frames(MOVIE_POS, OUTPUT)
->>>>>>> eff141ee09b63a420430c34ec5bf895138dfff44
 
 
