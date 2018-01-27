@@ -3,8 +3,8 @@ import os
 
 FRAME_FREQ = 300
 END_LEN = 10000
-MOVIE_POS = '/Users/michal/Downloads/Dunkirk/dunkirk.mp4'
-OUTPUT = '/Users/michal/Desktop/pics/dunkirk/'
+MOVIE_POS = '/Users/mackopes/Desktop/How To Train Your Dragon (2010) [1080p]/How.To.Train.Your.Dragon.2010.1080p.BrRip.x264.YIFY.mp4'
+OUTPUT = '/Users/mackopes/Desktop/HTTYD/pics'
 
 class MovieProcesser:
 
@@ -30,7 +30,7 @@ class MovieProcesser:
 
             currentFrame += 1
 
-            if currentFrame == int(cap.get(cv2.CAP_PROP_FRAME_COUNT))-END_LEN:
+            if currentFrame >= int(cap.get(cv2.CAP_PROP_FRAME_COUNT))-END_LEN:
                 break
 
 
@@ -38,7 +38,6 @@ class MovieProcesser:
         cap.release()
         cv2.destroyAllWindows()
 
-
-
+MovieProcesser().video_to_frames(MOVIE_POS, OUTPUT)
 
 
