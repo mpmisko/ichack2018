@@ -1,25 +1,27 @@
 import face_recognition
+from shutil import copyfile
 import os
 
 class FaceProcesser:
     def filter_faces(self, path):
-        try:
-            if not os.path.exists(path + 'faces/'):
-                os.makedirs(path)
-        except OSError:
-            print ('Error: Creating directory of data')
-
+        results = []
+        count = 0
         for filename in os.listdir(path):
-            if self._is_face(path + filename):
-                os.write(path + filename, path + 'faces/')
+            print(path+filename)
+            if (self.is_face(path+filename)):
+                print(path+'faces')
+                copyfile(path+filename, path+'faces/'+filename)
 
-    def _faces(self, path):
+        return results
+
+
+    def faces(self, path):
         image = face_recognition.load_image_file(path)
         return face_recognition.face_locations(image)
 
-    def _is_face(self, path):
+    def is_face(self, path):
         return len(self.faces(path)) != 0
 
 detector = FaceProcesser()
-print(detector.faces('/Users/michal/Desktop/pics/doctor_strange/36900.jpg'))
-print(detector.is_face('/Users/michal/Desktop/pics/doctor_strange/36900.jpg'))
+print(detector.filter_faces('/Users/michal/Desktop/pics/doctor_strange/'))
+

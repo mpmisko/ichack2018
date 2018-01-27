@@ -20,7 +20,7 @@ class MovieProcesser:
             print ('Error: Creating directory of data')
 
         currentFrame = 0
-        while (True):
+        while True:
             ret, frame = cap.read()
 
             # Saves image of the current frame in jpg file
