@@ -21,7 +21,7 @@ print("Images generated")
 
 movie = dict()
 
-for k, v in EmotionsClient().process_movie().items():
+for k, v in EmotionsClient().process_movie(OUTPUTPICS).items():
     movie[k] = v
 
 print("Emotions analysed")
