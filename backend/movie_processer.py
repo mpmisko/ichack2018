@@ -1,7 +1,7 @@
 import cv2
 import os
 
-FRAME_FREQ = 300
+FRAME_FREQ = 50
 END_LEN = 10000
 
 MOVIE_POS = '/Users/mackopes/Desktop/How To Train Your Dragon (2010) [1080p]/How.To.Train.Your.Dragon.2010.1080p.BrRip.x264.YIFY.mp4'
