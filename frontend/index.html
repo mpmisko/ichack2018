@@ -58,37 +58,37 @@
           <ul class="sidebar-menu" id="nav-accordion">
 
             <li class="mt">
-              <a class="active" href="index.html">
+              <a class="active" id="dk">
                 <i class="fa fa-desktop"></i>
-                <span>MOVIE1</span>
+                <span>Dunkirk (2017)</span>
               </a>
             </li>
 
             <li class="sub-menu">
-              <a href="javascript:;" >
+              <a href="javascript:;" id="js">
                 <i class="fa fa-desktop"></i>
-                <span>MOVIE 2</span>
+                <span>22 Jump Street (2014)</span>
               </a>
             </li>
 
              <li class="sub-menu">
-              <a href="javascript:;" >
+              <a href="javascript:;" id="hp" >
                 <i class="fa fa-desktop"></i>
-                <span>MOVIE 3</span>
+                <span>Harry Potter and the ...</span>
               </a>
             </li>
 
              <li class="sub-menu">
-              <a href="javascript:;" >
+              <a href="javascript:;" id="fc">
                 <i class="fa fa-desktop"></i>
-                <span>MOVIE 4</span>
+                <span>Fight Club (1999)</span>
               </a>
             </li>
 
              <li class="sub-menu">
-              <a href="javascript:;" >
+              <a href="javascript:;" id="td">
                 <i class="fa fa-desktop"></i>
-                <span>MOVIE 5</span>
+                <span>How to Train Your Dragon ...</span>
               </a>
             </li>
 
@@ -105,7 +105,7 @@
       <section id="main-content">
         <section class="wrapper">
 
-          <center> <h1> MOVIE TITLE </h1> </center>
+          <center> <h1 data-gf="title"> MOVIE TITLE </h1> </center>
 
           <div class="row mt">
             <!--CUSTOM CHART START -->
@@ -123,31 +123,31 @@
               </ul>
               <div class="bar">
                 <div class="title">ANGER</div>
-                <div class="value tooltips" data-original-title="ANGER" data-toggle="tooltip" data-placement="top">85%</div>
+                <div class="value tooltips" data-original-title="ANGER" data-gf="anger" data-gf-finalvalue="" data-toggle="tooltip" data-placement="top"></div>
               </div>
               <div class="bar ">
                 <div class="title">CONTEMPT</div>
-                <div class="value tooltips" data-original-title="CONTEMPT" data-toggle="tooltip" data-placement="top">50%</div>
+                <div class="value tooltips" data-original-title="CONTEMPT" data-gf="contempt" data-gf-finalvalue="" data-toggle="tooltip" data-placement="top"></div>
               </div>
               <div class="bar ">
                 <div class="title">DISGUST</div>
-                <div class="value tooltips" data-original-title="DISGUST" data-toggle="tooltip" data-placement="top">60%</div>
+                <div class="value tooltips" data-original-title="DISGUST" data-gf="disgust" data-gf-finalvalue="" data-toggle="tooltip" data-placement="top"></div>
               </div>
               <div class="bar ">
                 <div class="title">FEAR</div>
-                <div class="value tooltips" data-original-title="FEAR" data-toggle="tooltip" data-placement="top">45%</div>
+                <div class="value tooltips" data-original-title="FEAR" data-gf="fear" data-gf-finalvalue="" data-toggle="tooltip" data-placement="top"></div>
               </div>
               <div class="bar">
                 <div class="title">HAPPINESS</div>
-                <div class="value tooltips" data-original-title="HAPPINESS" data-toggle="tooltip" data-placement="top">32%</div>
+                <div class="value tooltips" data-original-title="HAPPINESS" data-gf="happiness" data-gf-finalvalue="" data-toggle="tooltip" data-placement="top"></div>
               </div>
               <div class="bar ">
                 <div class="title">SADNESS</div>
-                <div class="value tooltips" data-original-title="SADNESS" data-toggle="tooltip" data-placement="top">62%</div>
+                <div class="value tooltips" data-original-title="SADNESS" data-gf="sadness" data-gf-finalvalue="" data-toggle="tooltip" data-placement="top"></div>
               </div>
               <div class="bar">
                 <div class="title">SURPRISE</div>
-                <div class="value tooltips" data-original-title="SURPRISE" data-toggle="tooltip" data-placement="top">75%</div>
+                <div class="value tooltips" data-original-title="SURPRISE" data-gf="surprise" data-gf-finalvalue="" data-toggle="tooltip" data-placement="top"></div>
               </div>
             </div>
             <!--custom chart end-->
@@ -165,9 +165,9 @@
                 <div class="col-sm-6 col-xs-6"></div>
               </div>
               <div class="centered">
-                <h3> Actor Actor 1 </h3>
-                <h3> Vukmir Vukmir </h3>
-                <h3> Piala Piala </h3>
+                <h3 data-gf="actor0"> Actor Actor 1 </h3>
+                <h3 data-gf="actor1"> Vukmir Vukmir </h3>
+                <h3 data-gf="actor2"> Piala Piala </h3>
               </div>
             </div>
           </div><!-- /col-md-4 -->
@@ -181,19 +181,6 @@
 
            <canvas id="serverstatus03" height="140" width="140"></canvas>
 
-           <script>
-            var doughnutData2 = [
-            {
-              value: 22,
-              color:"#772222"
-            },
-            {
-              value : 78,
-              color : "#e27c1d"
-            }
-            ];
-            var myDoughnut = new Chart(document.getElementById("serverstatus03").getContext("2d")).Doughnut(doughnutData2);
-          </script>
           <div class="row">
            <div class="col-md-6">
             <p class="small mt">POSITIVE</p>
@@ -208,9 +195,9 @@
 
     <div class="col-md-4 mb">
       <!-- INSTAGRAM PANEL -->
-      <div class="instagram-panel pn">
-        <i class="fa-instagram fa-4x"></i>
-        <p>POSTER<br/>
+      <div data-gf="poster" class="instagram-panel pn">
+        <!-- <i class="fa-instagram fa-4x"></i> -->
+        <p><br/>
         </p>
       </div>
     </div><!-- /col-md-4 -->
@@ -221,46 +208,36 @@
   <div class="row">
     <!-- TWITTER PANEL -->
     <div class="col-md-4 mb">
-      <div class="darkblue-panel pn">
-       <div class="darkblue-header">
+      <div class="grey-panel pn">
+       <div class="grey-header">
          <h5>IMDb RATING</h5>
        </div>
        <canvas id="serverstatus02" height="120" width="120"></canvas>
-       <script>
-         var doughnutData = [
-         {
-          value: 82,
-          color:"#68dff0"
-        },
-        {
-          value : 18,
-          color : "#444c57"
-        }
-        ];
-        var myDoughnut = new Chart(document.getElementById("serverstatus02").getContext("2d")).Doughnut(doughnutData);
-      </script>
+       
       <footer>
-      <div class="pull-right">
-        <h5>82%</h5>
+      <div style="text-align: center;" class="">
+       <center><h5 style="text-align: center; display: block;" data-gf="imdbRating"></h5></center> 
       </div>
     </footer>
-  </div><! -- /darkblue panel -->
+  </div><! -- /grey panel -->
 </div><!-- /col-md-4 -->
 
 <div class="col-md-4 mb">
   <!-- INSTAGRAM PANEL -->
-  <div class="instagram-panel pn">
-    <i class="fa-instagram fa-4x"></i>
+  <div data-gf="avgColor" class="instagram-panel pn">
+    <!-- <i class="fa-instagram fa-4x"></i> -->
     <p>AVERAGE COLOR<br/>
     </p>
+    <div data-gf="avgColorText" id="avgColor" class="">#aabbcc</div>
   </div>
 </div><!-- /col-md-4 -->
 
 <div class="col-md-4 col-sm-4 mb">
  <!-- REVENUE PANEL -->
- <div class="darkblue-panel pn">
-  <div class="darkblue-header">
+ <div class="grey-panel pn">
+  <div class="grey-header">
    <h5>TRAILER</h5>
+   <iframe data-gf="trailer"  width="250" height="200" src="https://www.youtube.com/embed/ieibsVyVYnU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
  </div>
  
 </div>
@@ -268,44 +245,48 @@
 
 </div><!-- /row -->
 
+<div class="border-head">
+              <h3>COMMON WORDS</h3>
+            </div>
+
 <div class="row">
   <div class="col-lg-11 main-chart">
 
    <div class="row mtbox">
     <div class="col-md-2 col-sm-2 col-md-offset-1 box0">
      <div class="box1">
-      <h3>1st PLACE</h3>
-      <h3>WORD1</h3>
+      <h3>1st place</h3>
+      <h3 data-gf="word0">WORD1</h3>
     </div>
-    <p>This word has been used X times</p>
+    <p>This word has been used <span data-gf="word0s">X</span> times</p>
   </div>
   <div class="col-md-2 col-sm-2 box0">
    <div class="box1">
-    <h3>2nd PLACE</h3>
-    <h3>WORD2</h3>
+    <h3>2nd place</h3>
+    <h3 data-gf="word1">WORD2</h3>
   </div>
-  <p>This word has been used X times</p>
+  <p>This word has been used <span data-gf="word1s">X</span> times</p>
 </div>
 <div class="col-md-2 col-sm-2 box0">
  <div class="box1">
-  <h3>3rd PLACE</h3>
-  <h3>WORD3</h3>
+  <h3>3rd place</h3>
+  <h3 data-gf="word2">WORD3</h3>
 </div>
-<p>This word has been used X times</p>
-</div>
-<div class="col-md-2 col-sm-2 box0">
- <div class="box1">
-  <h3>4th PLACE</h3>
-  <h3>WORD</h3>
-</div>
-<p>This word has been used X times</p>
+<p>This word has been used <span data-gf="word2s">X</span> times</p>
 </div>
 <div class="col-md-2 col-sm-2 box0">
  <div class="box1">
-  <h3>5th PLACE</h3>
-  <h3>WORD</h3>
+  <h3>4th place</h3>
+  <h3 data-gf="word3">WORD</h3>
 </div>
-<p>This word has been used X times</p>
+<p>This word has been used <span data-gf="word3s">X</span> times</p>
+</div>
+<div class="col-md-2 col-sm-2 box0">
+ <div class="box1">
+  <h3>5th place</h3>
+  <h3 data-gf="word4">WORD</h3>
+</div>
+<p>This word has been used <span data-gf="word4s">X</span> times</p>
 </div>
 
 </div><!-- /row mt -->  
@@ -318,38 +299,38 @@
    <div class="row mtbox">
     <div class="col-md-2 col-sm-2 col-md-offset-1 box0">
      <div class="box1">
-      <h3>1st PLACE</h3>
-      <h3>WORD1</h3>
+      <h3>6th place</h3>
+      <h3 data-gf="word5">WORD1</h3>
     </div>
-    <p>This word has been used X times</p>
+    <p>This word has been used <span data-gf="word5s">X</span> times</p>
   </div>
   <div class="col-md-2 col-sm-2 box0">
    <div class="box1">
-    <h3>2nd PLACE</h3>
-    <h3>WORD2</h3>
+    <h3>7th place</h3>
+    <h3 data-gf="word6">WORD2</h3>
   </div>
-  <p>This word has been used X times</p>
+  <p>This word has been used  <span data-gf="word6s">X</span> times</p>
 </div>
 <div class="col-md-2 col-sm-2 box0">
  <div class="box1">
-  <h3>3rd PLACE</h3>
-  <h3>WORD3</h3>
+  <h3>8th place</h3>
+  <h3 data-gf="word7">WORD3</h3>
 </div>
-<p>This word has been used X times</p>
-</div>
-<div class="col-md-2 col-sm-2 box0">
- <div class="box1">
-  <h3>4th PLACE</h3>
-  <h3>WORD</h3>
-</div>
-<p>This word has been used X times</p>
+<p>This word has been used <span data-gf="word7s">X</span> times</p>
 </div>
 <div class="col-md-2 col-sm-2 box0">
  <div class="box1">
-  <h3>5th PLACE</h3>
-  <h3>WORD</h3>
+  <h3>9th place</h3>
+  <h3 data-gf="word8">  WORD</h3>
 </div>
-<p>This word has been used X times</p>
+<p>This word has been used <span data-gf="word8s">X</span> times</p>
+</div>
+<div class="col-md-2 col-sm-2 box0">
+ <div class="box1">
+  <h3>10th place</h3>
+  <h3 data-gf="word9">WORD</h3>
+</div>
+<p>This word has been used <span data-gf="word9s">X</span> times</p>
 </div>
 
 </div><!-- /row mt --> 
@@ -370,6 +351,8 @@
 
 
 <!--common script for all pages-->
+<script src="assets/js/filler.js"></script>
+
 <script src="assets/js/common-scripts.js"></script>
 
 <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
@@ -413,7 +396,6 @@
     console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
   }
 </script>
-
 
 </body>
 </html>

@@ -28,7 +28,7 @@
         "happiness": 0.24148431124852973,
         "anger": 0.16594451926114356
     },
-    "trailer": "https://www.youtube.com/watch?v=ieibsVyVYnU",
+    "trailer": "https://www.youtube.com/embed/ieibsVyVYnU",
     "description": "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
     "avg_color": "#1E231C",
     "cast": [
@@ -48,7 +48,7 @@
             "time": 7, 
             "thought": 7, 
             "help": 6,  
-            "ask": 6\
+            "ask": 6
             },
     "sentiment": 0.5393474896748861
 }

@@ -232,11 +232,12 @@ ul.top-menu > li > .logout {
     width: 210px;
     height: 100%;
     position: fixed;
-    background: #424a5d;
+    background: #ffd777; /*#424a5d;*/
+    color: #fff; 
 }
 
 #sidebar h5 {
-	color: #f2f2f2;
+	color: #fff;
 	font-weight: 700;
 }
 
@@ -336,12 +337,14 @@ ul.sidebar-menu li ul.sub li.active a {
 
 ul.sidebar-menu li{
     /*line-height: 20px !important;*/
-    margin-bottom: 5px;
+
     margin-left:10px;
     margin-right:10px;
 }
 
 ul.sidebar-menu li.sub-menu{
+
+    border-radius: 10px; 
     line-height: 15px;
 }
 
@@ -350,7 +353,7 @@ ul.sidebar-menu li a span{
 }
 
 ul.sidebar-menu li a{
-    color: #aeb2b7;
+    color: #fff;
     text-decoration: none;
     display: block;
     padding: 15px 0 15px 10px;
@@ -364,9 +367,10 @@ ul.sidebar-menu li a{
 }
 
 ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
-    background: #68dff0;
+    background: #ff865c; 
     color: #fff;
     display: block;
+    border-radius: 5px; 
 
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -831,8 +835,8 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 /* LINE ICONS CONFIGURATION */
 
 .mtbox {
-	margin-top: 80px;
-	margin-bottom: 40px;
+	margin-top: 0px;
+	margin-bottom: -20px;
 }
 
 .box1 {
@@ -2240,4 +2244,29 @@ label {
     min-height: 900px;
 }
 
+.custom-bar-chart .bar .value{
+height: 0; 
+ transition:height 1s ease-out;
 
+}
+
+[data-gf="avgColor"]{
+    background: none; 
+    background-color: white; /* url(../img/instagram.jpg) no-repeat center top; */
+    transition: background-color 1s ease-out; 
+    text-align: center;
+    background-position: center center;
+}
+
+
+#avgColor{
+    width: 300px; 
+    padding: 50px;
+    display: inline-block; 
+    font-size: 25px; 
+    background-color: transparent; 
+    margin-top: 30px; 
+    color: white;
+
+    transition: background-color 1s ease-out; 
+}
