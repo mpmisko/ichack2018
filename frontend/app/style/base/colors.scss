@@ -1,12 +1,44 @@
 
-$color-white:				#FFFFFF;
-$color-dark:				#27242b;
-$color-light:				#c5d1d2;//#665b63
-$color-one:					#cb6a50;
-$color-two: 				#5d8895;
-$color-text: 				#333;
-$color-light-grey: 			#555;
-$color-transparent: transparent;
+
+$color-white:                #FFFFFF;
+$color-dark:                #27242b;
+$color-light:              #c5d1d2;
+$color-one:                    #cb6a50;
+$color-two:                 #5d8895;
+$color-text:                 #333;
+$color-light-grey:             #555;
+
+
+/* $color-one: #f44336;
+$color-two: #222;
+$color-light: #aaaaaa;
+$color-dark: #444; */
+
+
+
+
+$color-amber: #F0A30A;
+$color-red: #E51400;
+$color-violet: #AA00FF;
+$color-cyan: #1BA1E2; 
+$color-green: #60A917;
+$color-lightblue: #8EE5EE;
+.bg-color-amber{background-color: $color-amber !important;}
+.color-amber{color: $color-amber !important;}
+.bg-color-red{background-color: $color-red !important;}
+.bg-color-violet{background-color: $color-violet !important;}
+.bg-color-cyan{background-color: $color-cyan !important;}
+.bg-color-green{background-color: $color-green !important;}
+.bg-color-lightblue{background-color: $color-lightblue !important;}
+
+$color-white:                #FFFFFF;
+$color-dark:                #27242b;
+$color-light:                #c5d1d2;//#665b63
+$color-one:                    #cb6a50;
+$color-two:                 #5d8895;
+$color-text:                 #333;
+$color-light-grey:             #555;
+
 
 /* $color-one: #f44336;
 $color-two: #222;
@@ -15,7 +47,7 @@ $color-dark: #444; */
 
 
 .bg-color-transparent{
-	background-color: transparent; 
+   background-color: transparent; 
 }
 
 $color-amber: #F0A30A;
@@ -23,7 +55,16 @@ $color-red: #E51400;
 $color-violet: #AA00FF;
 $color-cyan: #1BA1E2; 
 $color-green: #60A917;
-
+$color-lightblue: #8EE5EE;
 .bg-color-amber{background-color: $color-amber !important;}
-
-
+.color-amber{color: $color-amber !important;}
+.bg-color-red{background-color: $color-red !important;}
+.color-red{color: $color-red !important;}
+.bg-color-violet{background-color: $color-violet !important;}
+.color-violet{color: $color-violet !important;}
+.bg-color-cyan{background-color: $color-cyan !important;}\
+.color-cyan{color: $color-cyan !important;}
+.bg-color-green{background-color: $color-green !important;}
+.color-green{color: $color-green !important;}
+.bg-color-lightblue{background-color: $color-lightblue !important;}
+.color-lightblue{color: $color-lightblue !important;}

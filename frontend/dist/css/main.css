@@ -14,7 +14,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input[type=text] {
   margin: 0;
   padding: 0;
   border: 0;
@@ -49,11 +49,70 @@ table {
 $color-two: #222;
 $color-light: #aaaaaa;
 $color-dark: #444; */
+.bg-color-amber {
+  background-color: #F0A30A !important; }
+
+.color-amber {
+  color: #F0A30A !important; }
+
+.bg-color-red {
+  background-color: #E51400 !important; }
+
+.bg-color-violet {
+  background-color: #AA00FF !important; }
+
+.bg-color-cyan {
+  background-color: #1BA1E2 !important; }
+
+.bg-color-green {
+  background-color: #60A917 !important; }
+
+.bg-color-lightblue {
+  background-color: #8EE5EE !important; }
+
+/* $color-one: #f44336;
+$color-two: #222;
+$color-light: #aaaaaa;
+$color-dark: #444; */
 .bg-color-transparent {
   background-color: transparent; }
 
 .bg-color-amber {
   background-color: #F0A30A !important; }
+
+.color-amber {
+  color: #F0A30A !important; }
+
+.bg-color-red {
+  background-color: #E51400 !important; }
+
+.color-red {
+  color: #E51400 !important; }
+
+.bg-color-violet {
+  background-color: #AA00FF !important; }
+
+.color-violet {
+  color: #AA00FF !important; }
+
+.bg-color-cyan {
+  background-color: #1BA1E2 !important; }
+
+\
+.color-cyan {
+  color: #1BA1E2 !important; }
+
+.bg-color-green {
+  background-color: #60A917 !important; }
+
+.color-green {
+  color: #60A917 !important; }
+
+.bg-color-lightblue {
+  background-color: #8EE5EE !important; }
+
+.color-lightblue {
+  color: #8EE5EE !important; }
 
 * {
   font-size: 14px;
@@ -390,6 +449,84 @@ h6 {
       font-size: 1.7em;
       display: block; }
 
+.header2 {
+  max-width: 1000px;
+  margin: 0 auto; }
+  .header2__logo {
+    width: 20%;
+    display: inline-block;
+    float: left;
+    margin-top: 15px; }
+    .header2__logo img {
+      height: 50px; }
+  .header2__searchbar {
+    float: left;
+    width: 55%;
+    display: inline-block;
+    margin-top: 15px; }
+    .header2__searchbar input {
+      background-color: transparent;
+      width: calc(100% - 20px);
+      height: 40px;
+      line-height: 1;
+      padding: 5px;
+      padding-left: 10px;
+      border: 1px solid black;
+      color: black;
+      font-size: 1em;
+      font-family: Tahoma, Verdana, Segoe, sans-serif; }
+  .header2__searchbutton {
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 5%;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 20px;
+    color: black;
+    font-family: Tahoma, Verdana, Segoe, sans-serif; }
+  .header2__searchbutton:hover {
+    color: red; }
+
+.emotions {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-color: transparent;
+  overflow: hidden; }
+  .emotions__emotion {
+    height: 100%;
+    top: 0;
+    width: calc(100% / 7 - 1px);
+    border: solid 0px black;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+    position: relative; }
+    .emotions__emotion__bar {
+      float: left;
+      top: 0;
+      width: 100%;
+      height: 80%;
+      background-color: transparent;
+      position: relative; }
+      .emotions__emotion__bar__bar {
+        width: 40%;
+        height: 50%;
+        background-color: #5555aa;
+        position: absolute;
+        bottom: 0;
+        left: 30%; }
+    .emotions__emotion__label {
+      position: relative;
+      text-align: center;
+      float: left;
+      top: 0;
+      width: 100%;
+      height: 20% !important;
+      background-color: transparent; }
+      .emotions__emotion__label span::before {
+        content: ""; }
+
 .header--1 {
   height: 2.5em;
   background-color: #cb6a50;
@@ -397,7 +534,6 @@ h6 {
 
 .header--2 {
   height: 5em;
-  background-color: #5d8895;
   position: relative; }
 
 .main {
@@ -410,7 +546,7 @@ h6 {
   display: 1200px; }
 
 .report {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto; }
   .report__hsep {
     width: 10px;
