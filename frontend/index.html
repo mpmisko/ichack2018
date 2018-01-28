@@ -470,7 +470,7 @@
                       </div>
                       <div class="custom-bar-chart">
                           <ul class="y-axis">
-                              <li><span>10.000</span></li>
+                              <li><span>8.000</span></li>
                               <li><span>8.000</span></li>
                               <li><span>6.000</span></li>
                               <li><span>4.000</span></li>
@@ -479,31 +479,31 @@
                           </ul>
                           <div class="bar">
                               <div class="title">ANGER</div>
-                              <div class="value tooltips" data-original-title="8.500" data-toggle="tooltip" data-placement="top">85%</div>
+                              <div class="value tooltips" data-gf="anger" data-original-title="8.500" data-toggle="tooltip" data-placement="top">100%</div>
                           </div>
                           <div class="bar ">
                               <div class="title">CONTEMPT</div>
-                              <div class="value tooltips" data-original-title="5.000" data-toggle="tooltip" data-placement="top">50%</div>
+                              <div class="value tooltips" data-gf="contempt" data-original-title="8.500" data-toggle="tooltip" data-placement="top">100</div>
                           </div>
                           <div class="bar ">
                               <div class="title">DISGUST</div>
-                              <div class="value tooltips" data-original-title="6.000" data-toggle="tooltip" data-placement="top">60%</div>
+                              <div class="value tooltips" data-gf="disgust" data-original-title="6.000" data-toggle="tooltip" data-placement="top">100</div>
                           </div>
                           <div class="bar ">
                               <div class="title">FEAR</div>
-                              <div class="value tooltips" data-original-title="4.500" data-toggle="tooltip" data-placement="top">45%</div>
+                              <div class="value tooltips" data-gf="fear" data-original-title="4.500" data-toggle="tooltip" data-placement="top">45%</div>
                           </div>
                           <div class="bar">
                               <div class="title">HAPPINESS</div>
-                              <div class="value tooltips" data-original-title="3.200" data-toggle="tooltip" data-placement="top">32%</div>
+                              <div class="value tooltips" data-gf="happiness" data-original-title="3.200" data-toggle="tooltip" data-placement="top">32%</div>
                           </div>
                           <div class="bar ">
                               <div class="title">SADNESS</div>
-                              <div class="value tooltips" data-original-title="6.200" data-toggle="tooltip" data-placement="top">62%</div>
+                              <div class="value tooltips" data-gf="sadness" data-original-title="6.200" data-toggle="tooltip" data-placement="top">62%</div>
                           </div>
                           <div class="bar">
                               <div class="title">SURPRISE</div>
-                              <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
+                              <div class="value tooltips" data-gf="surprise" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
                           </div>
                       </div>
                       <!--custom chart end-->
@@ -667,8 +667,15 @@
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/jquery-1.8.3.min.js"></script>
+<!--    <script src="assets/js/jquery.js"></script>
+ <script src="assets/js/jquery-1.8.3.min.js"></script> -->
+
+     <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+
     <script src="assets/js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
@@ -676,7 +683,11 @@
     <script src="assets/js/jquery.sparkline.js"></script>
 
 
+
+
     <!--common script for all pages-->
+
+    <script src="assets/js/filler.js" ></script>
     <script src="assets/js/common-scripts.js"></script>
     
     <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
@@ -741,7 +752,12 @@
             console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
         }
     </script>
-  
+
+
+
+
+
+
 
   </body>
 </html>
