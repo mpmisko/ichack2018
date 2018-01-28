@@ -31,7 +31,7 @@ def analyse_keywords(subtitles_path, max_elem = 10):
                     occurences[nouns[word]] = 1
 
     occurences_list = [(k, v) for k, v in occurences.items()]
-    occurences_list = sorted(occurences_list, key=lambda tup: tup[1], reverse = True)
+    occurences_list = dict(sorted(occurences_list, key=lambda tup: tup[1], reverse = True)[:max_elem])
 
     documents = {"documents" : list()}
     for i, st in enumerate(textwrap.wrap(" ".join(subtitles), 5000)):
@@ -42,7 +42,7 @@ def analyse_keywords(subtitles_path, max_elem = 10):
     for d in r["documents"]:
         score += d["score"]
     score /= len(r["documents"])
-    return {"words" : [k for k, v in occurences_list[:max_elem]], "sentiment" : score}
+    return {"words" : occurences_list, "sentiment" : score}
 
 def load_nouns():
     f = open(NOUNSPATH, "r")

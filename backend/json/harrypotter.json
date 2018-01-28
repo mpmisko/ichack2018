@@ -1,0 +1,54 @@
+{
+    "writers": [
+        "Steve Kloves (screenplay)",
+        "J.K. Rowling (novel)",
+        "Warner Bros.",
+        "Heyday Films",
+        "Moving Picture Company (MPC)"
+    ],
+    "title": "Harry Potter and the Deathly Hallows: Part 2\u00a0(2011)",
+    "directors": [
+        "David Yates"
+    ],
+    "votes": "625,308",
+    "rated": "12A",
+    "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIyZGU4YzUtNDkzYi00ZDRhLTljYzctYTMxMDQ4M2E0Y2YxXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UX182_CR0,0,182,268_AL_.jpg(18 kB)",
+    "genre": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+    ],
+    "bestRating": "10",
+    "emotions": {
+        "contempt": 0.042656401905806655,
+        "disgust": 0.05036311026675762,
+        "sadness": 0.25689139794053106,
+        "fear": 0.037543346165091106,
+        "surprise": 0.20511691321214023,
+        "happiness": 0.24148431124852973,
+        "anger": 0.16594451926114356
+    },
+    "trailer": "https://www.youtube.com/watch?v=ieibsVyVYnU",
+    "description": "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
+    "avg_color": "#1E231C",
+    "cast": [
+        "Daniel Radcliffe",
+        "Emma Watson",
+        "Rupert Grint"
+    ],
+    "rating": "8.1",
+
+    "words": {
+            "find": 17,
+            "kill": 14,
+            "tell": 10,
+            "boy": 9,
+            "she": 8,
+            "talk": 7,
+            "time": 7, 
+            "thought": 7, 
+            "help": 6,  
+            "ask": 6\
+            },
+    "sentiment": 0.5393474896748861
+}

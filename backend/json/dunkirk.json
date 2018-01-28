@@ -1,0 +1,53 @@
+{
+    "emotions": {
+        "anger": 0.2608336415446551,
+        "contempt": 0.02673979182452723,
+        "disgust": 0.0582791574464255,
+        "fear": 0.011234817311364076,
+        "happiness": 0.12107871169938434,
+        "sadness": 0.31659477612443998,
+        "surprise": 0.2052391040492038
+    },
+    "avg_color": "#444C42",
+    "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BN2YyZjQ0NTEtNzU5MS00NGZkLTg0MTEtYzJmMWY3MWRhZjM2XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_UX182_CR0,0,182,268_AL_.jpg(18 kB)",
+    "title": "Dunkirk (2017),
+    "rating": "8.1",
+    "bestRating": "10",
+    "votes": "328,864",
+    "rated": "12A",
+    "genre": [
+        "Action",
+        "Drama",
+        "History"
+    ],
+    "description": "Allied soldiers from Belgium, the British Empire and France are surrounded by the German Army, and evacuated during a fierce battle in World War II.",
+    "cast": [
+        "Fionn Whitehead",
+        "Barry Keoghan",
+        "Mark Rylance"
+    ],
+    "writers": [
+        "Christopher Nolan",
+        "Syncopy",
+        "Warner Bros.",
+        "Dombey Street Productions"
+    ],
+    "directors": [
+       "Christopher Nolan"
+    ],
+    "trailer": "https://www.youtube.com/watch?v=F-eMt3SrfFU",
+    {  
+    "words": {
+        "back": 10,
+        "fight": 8,
+        "men": 6,
+        "load": 5,
+        "leave": 5,
+        "keep": 5,
+        "army": 5,
+        "way": 5,
+        "help": 5,
+        "many": 4
+    },
+    "sentiment": 0.5471675470471382
+}

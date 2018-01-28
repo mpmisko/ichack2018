@@ -1,0 +1,54 @@
+{
+    "emotions": {
+        "disgust": 0.06450033527107278,
+        "surprise": 0.1724605907144232,
+        "fear": 0.01686403601923335,
+        "anger": 0.2046644246481925,
+        "happiness": 0.3735164286126139,
+        "contempt": 0.03461711882859173,
+        "sadness": 0.13337706590587248
+    },
+    "rated": "15",
+    "rating": "7.0",
+    "writers": [
+        "Michael Bacall (screenplay)",
+        "Oren Uziel (screenplay)",
+        "Columbia Pictures",
+        "Metro-Goldwyn-Mayer (MGM)",
+        "LStar Capital"
+    ],
+    "description": "After making their way through high school (twice), big changes are in store for officers Schmidt and Jenko when they go deep undercover at a local college.",
+    "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcwNzAxMDU1M15BMl5BanBnXkFtZTgwNDE2NTU1MTE@._V1_UX182_CR0,0,182,268_AL_.jpg(17 kB)",
+    "cast": [
+        "Channing Tatum",
+        "Jonah Hill",
+        "Ice Cube"
+    ],
+    "bestRating": "10",
+    "votes": "295,427",
+    "avg_color": "#42382C",
+    "genre": [
+        "Action",
+        "Comedy",
+        "Crime"
+    ],
+    "directors": [
+        "Phil Lord",
+        "Christopher Miller"
+    ],
+    "title": "22 Jump Street (2014)",
+    "trailer": "https://www.youtube.com/watch?v=-Jdc3nidnAg",
+    "words": {
+        "right": 36,
+        "two": 19,
+        "good": 18,
+        "time": 18,
+        "turn": 16,
+        "find": 15,
+        "thing": 15,
+        "thought": 14,
+        "jump": 14,
+        "back": 12
+    },
+    "sentiment": 0.4243352693669936
+}
