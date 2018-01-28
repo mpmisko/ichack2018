@@ -15,13 +15,13 @@ movie_input_path = sys.argv[2]
 subtitle_input = sys.argv[3]
 json_name = sys.argv[4]
 
-MovieProcesser().video_to_frames(movie_input_path, OUTPUT)
+#MovieProcesser().video_to_frames(movie_input_path, OUTPUT)
 
 print("Images generated")
 
 movie = dict()
 
-for k, v in EmotionsClient().process_movie():
+for k, v in EmotionsClient().process_movie().items():
     movie[k] = v
 
 print("Emotions analysed")
