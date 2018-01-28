@@ -104,7 +104,6 @@ var Script = function () {
 
 
 // custom bar chart
-/*
 
     if ($(".custom-bar-chart")) {
         $(".bar").each(function () {
@@ -114,8 +113,7 @@ var Script = function () {
                 height: i
             }, 2000)
         })
-    }*/
-    
+    }
 
 
 }();
