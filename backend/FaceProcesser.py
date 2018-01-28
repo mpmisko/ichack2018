@@ -23,6 +23,3 @@ class FaceProcesser:
     def is_face(self, path):
         return len(self.faces(path)) != 0
 
-detector = FaceProcesser()
-print(detector.filter_faces('/Users/michal/Desktop/pics/dunkirk/'))
-

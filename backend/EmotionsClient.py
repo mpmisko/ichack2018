@@ -1,6 +1,7 @@
 import requests
 import time
 import os
+from FaceProcesser import FaceProcesser
 import json
 from threading import Thread
 
@@ -59,12 +60,15 @@ class EmotionsClient:
         return result
 
     def process_movie(self, pics_dir):
+        face_ai = FaceProcesser()
         responses = []
         for filename in os.listdir(pics_dir):
-            print("sending request to Microsoft: " + filename)
-            response = self.process_image(pics_dir + filename)
-            print(response)
-            responses.append(response)
+            print(pics_dir+filename)
+            if face_ai.is_face(pics_dir+filename):
+                print("sending request to Microsoft: " + filename)
+                response = self.process_image(pics_dir + filename)
+                print(response)
+                responses.append(response)
         result = self._compute(responses)
         print('________________________________________________________________________')
         return self._neutralize(result)
