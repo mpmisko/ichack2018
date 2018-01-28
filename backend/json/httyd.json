@@ -1,0 +1,51 @@
+{
+    "emotions": {
+        "anger": 0.12633294954400992,
+        "contempt": 0.06922162495249339,
+        "disgust": 0.04787810447285736,
+        "fear": 0.017500550512042898,
+        "happiness": 0.31042924800010546,
+        "sadness": 0.1272680520062708,
+        "surprise": 0.30136947051222013
+    },
+    "avg_color": "#1F231E",
+    "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzFjMWNhYzQtYTIxNC00ZWQ1LThiOTItNWQyZmMxNDYyMjA5XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "title": "Fight Club\u00a0(1999)",
+    "rating": "8.8",
+    "bestRating": "10",
+    "votes": "1,527,155",
+    "rated": "18",
+    "genre": [
+        "Drama"
+    ],
+    "description": "An insomniac office worker, looking for a way to change his life, crosses paths with a devil-may-care soapmaker, forming an underground fight club that evolves into something much, much more.",
+    "cast": [
+        "Brad Pitt",
+        "Edward Norton",
+        "Meat Loaf"
+    ],
+    "writers": [
+        "Chuck Palahniuk (novel)",
+        "Jim Uhls (screenplay)",
+        "Fox 2000 Pictures",
+        "Regency Enterprises",
+        "Linson Films"
+    ],
+    "directors": [
+        "David Fincher"
+    ],
+    "words": [
+        "dragon",
+        "kill",
+        "back",
+        "thing",
+        "find",
+        "head",
+        "stop",
+        "time",
+        "few",
+        "most"
+    ],
+    "sentiment": 0.641549676656723,
+    "trailer": "https://www.youtube.com/watch?v=SUXWAEX2jlg"
+}
