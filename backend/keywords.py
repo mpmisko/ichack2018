@@ -1,4 +1,6 @@
 import srt
+import sentiment
+import textwrap
 
 NOUNSPATH = "nouns.txt"
 
@@ -31,7 +33,16 @@ def analyse_keywords(subtitles_path, max_elem = 10):
     occurences_list = [(k, v) for k, v in occurences.items()]
     occurences_list = sorted(occurences_list, key=lambda tup: tup[1], reverse = True)
 
-    return {"words" : [k for k, v in occurences_list[:max_elem]]}
+    documents = {"documents" : list()}
+    for i, st in enumerate(textwrap.wrap(" ".join(subtitles), 5000)):
+        documents["documents"].append({"id" : str(i), "language" : "en", "text" : st})
+
+    r = sentiment.GetSentiment(documents)
+    score = 0
+    for d in r["documents"]:
+        score += d["score"]
+    score /= len(r["documents"])
+    return {"words" : [k for k, v in occurences_list[:max_elem]], "sentiment" : score}
 
 def load_nouns():
     f = open(NOUNSPATH, "r")
