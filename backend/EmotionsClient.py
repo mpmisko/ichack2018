@@ -63,15 +63,11 @@ class EmotionsClient:
         face_ai = FaceProcesser()
         responses = []
         for filename in os.listdir(pics_dir):
-            print(pics_dir+filename)
             if filename.endswith('.jpg'):
                 if face_ai.is_face(pics_dir+filename):
-                    print("sending request to Microsoft: " + filename)
                     response = self.process_image(pics_dir + filename)
-                    print(response)
                     responses.append(response)
         result = self._compute(responses)
-        print('________________________________________________________________________')
         return {'emotions': self._neutralize(result)}
 
     def _avg(self, frame):
@@ -111,7 +107,6 @@ class EmotionsClient:
         }
 
         averages = list(filter(lambda l: self._are_zero(l), list(map(lambda fr: self._avg(fr), responses))))
-        print(averages)
 
         if len(averages) == 0:
             return {}
@@ -165,9 +160,4 @@ class EmotionsClient:
 #   ac = EmotionsClient()
 #   response = ac.process_image(path_to_img)
 
-eClient = EmotionsClient()
-print('________________________________________________________________________')
-
-res = eClient.process_movie('/Users/michal/Desktop/pics/doctor_strange/')
-print(res)
 
