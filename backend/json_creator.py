@@ -7,8 +7,8 @@ import sys
 from youtubelink import trailer_link
 from EmotionsClient import EmotionsClient
 
-OUTPUT = "/Users/mackopes/Desktop/processedmovie/pic"
-OUTPUTPICS = "/Users/mackopes/Desktop/processedmovie/"
+OUTPUT = "/Users/mackopes/Desktop/processedmovie2/pic"
+OUTPUTPICS = "/Users/mackopes/Desktop/processedmovie2/"
 
 movie_name = sys.argv[1]
 movie_input_path = sys.argv[2]

@@ -62,11 +62,13 @@ class EmotionsClient:
     def process_movie(self, pics_dir):
         face_ai = FaceProcesser()
         responses = []
-        for filename in os.listdir(pics_dir):
+        for i, filename in enumerate(os.listdir(pics_dir)):
+            print(i)
             if filename.endswith('.jpg'):
                 if face_ai.is_face(pics_dir+filename):
                     response = self.process_image(pics_dir + filename)
                     responses.append(response)
+
         result = self._compute(responses)
         return {'emotions': self._neutralize(result)}
 
